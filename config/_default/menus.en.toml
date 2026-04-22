@@ -1,0 +1,51 @@
+[[main]]
+none = "none"
+
+[[main]]
+name = "Photography"
+pre = "image"
+pageRef = "photography"
+identifier = "gWYT9fqCDL"
+weight = 3
+
+[[main]]
+name = "Instagram"
+pre = "instagram"
+url = "https://www.instagram.com/lb.photography.gb/"
+identifier = "5PaNrGWjCr"
+weight = 4
+
+[[main]]
+name = "About Me"
+pre = "pencil"
+pageRef = "aboutme"
+identifier = "BEPNUG3cOS"
+weight = 1
+
+[[main]]
+name = "Publications"
+pre = "envelope"
+pageRef = "publications"
+identifier = "ZG1UKqswdD"
+weight = 2
+
+[[footer]]
+none = "none"
+
+[[footer]]
+name = "Instagram"
+url = "https://www.instagram.com/lb.photography.gb/"
+identifier = "AKjf6lZrfh"
+weight = 9_999
+
+[[footer]]
+name = "Website GitHub"
+url = "https://github.com/DrTaboo/lbweb.uk"
+identifier = "9zY0ICFQph"
+weight = 9_999
+
+[[footer]]
+name = "Email Me"
+url = "mailto:contactme@lbweb.uk"
+identifier = "Qmzq1Pi8y9"
+weight = 9_999

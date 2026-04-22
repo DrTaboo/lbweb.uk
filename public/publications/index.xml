@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Portfolio of Lewis ███████</title>
+    <link>http://localhost:1313/publications/</link>
+    <description>Recent content in Publications on Portfolio of Lewis ███████</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>contactme@lbweb.uk (Lewis ███████)</managingEditor>
+    <webMaster>contactme@lbweb.uk (Lewis ███████)</webMaster>
+    <copyright>© 2026 Lewis | All Rights Reserved. Images licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).</copyright>
+    <atom:link href="http://localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>

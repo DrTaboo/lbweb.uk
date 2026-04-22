@@ -1,0 +1,26 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Portfolio of Lewis ███████"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "Signature V3 Inv BG White.png"
+description = "The portfolio of Lewis ███████: His photography, research papers, projects, and more!"
+copyright = "© 2026 Lewis | All Rights Reserved. Images licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)."
+secondaryLogo = "Signature V3 Inv BG Black.png"
+
+  [params.author]
+  links = [ ]
+
+["params.author"]
+name = "Lewis ███████"
+email = "contactme@lbweb.uk"
+image = "author.png"
+imageQuality = "100"
+headline = "Just a normal guy, sharing his projects and photographs of the world around him."
+bio = "I am a concurrent student at a Further Education level, aiming to begin flight training for an ATPL as soon as possible. I have already developed many soft skills due to my participation in Young Enterprise and other extracurricular activities during my tenure at a Secondary School. I am also ready to learn at any convenience, and willing to put all my effort in my work."

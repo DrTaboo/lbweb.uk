@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article>
+  <header>
+    <h1 class="text-4xl font-extrabold">{{ .Title }}</h1>
+  </header>
+  <section class="mt-6 prose dark:prose-invert">
+    {{ .Content }}
+  </section>
+  <section class="flex flex-wrap mt-10">
+    {{ range .Resources.ByType "image" }}
+    <div class="w-full p-2 sm:w-1/2 md:w-1/3">
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="rounded-lg shadow-md cursor-pointer hover:opacity-90">
+    </div>
+    {{ end }}
+  </section>
+</article>
+{{ end }}

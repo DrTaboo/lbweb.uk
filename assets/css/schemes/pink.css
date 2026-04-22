@@ -1,0 +1,18 @@
+:root {
+  /* Soft Pastel Pink (Light Mode) */
+  --color-primary-50: 255, 241, 242;
+  --color-primary-500: 244, 63, 94;
+  --color-neutral-50: 255, 245, 247; /* Light Pink Background */
+  --color-neutral-900: 50, 20, 30;   /* Dark Pink Text */
+}
+
+.dark {
+  /* This forces "Dark Mode" to also be Pastel Pink */
+  --color-neutral-50: 255, 245, 247; 
+  --color-neutral-100: 255, 230, 235;
+  --color-neutral-800: 50, 20, 30;
+  --color-neutral-900: 20, 5, 10;
+  
+  --color-primary-400: 251, 113, 133;
+  --color-primary-500: 244, 63, 94;
+}

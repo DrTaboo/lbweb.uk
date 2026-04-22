@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="mt-8 post-content max-w-full">
+  <div class="flex flex-col">
+    
+    <header class="mb-10">
+      <h1 class="text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title }}
+      </h1>
+    </header>
+
+    <div class="prose dark:prose-invert max-w-full">
+      {{ .Content }}
+    </div>
+
+  </div>
+</section>
+{{ end }}

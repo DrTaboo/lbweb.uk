@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio of Lewis ███████</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Portfolio of Lewis ███████</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>contactme@lbweb.uk (Lewis ███████)</managingEditor>
+    <webMaster>contactme@lbweb.uk (Lewis ███████)</webMaster>
+    <copyright>© 2026 Lewis | All Rights Reserved. Images licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).</copyright>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/aboutme/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/aboutme/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>http://localhost:1313/photography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
