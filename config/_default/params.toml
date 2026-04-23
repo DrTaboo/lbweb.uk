@@ -30,6 +30,133 @@ storageBucket = "lbweb-post-likes-n-views.firebasestorage.app"
 messagingSenderId = "225433503394"
 appId = "1:225433503394:web:f94d51ceeefa83f04c79fb"
 measurementId = "G-DB62FCYVEE"
+databaseURL = "https://lbweb-post-likes-n-views-default-rtdb.europe-west1.firebasedatabase.app"
+
+[umamiAnalytics]
+websiteid = "d78540f5-cfbc-470f-9b32-99e0343e1ed5"
+
+[header]
+layout = "fixed"
+
+[footer]
+showMenu = true
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "background"
+showRecent = false
+showMoreLink = false
+showMoreLinkDest = "/blog/"
+cardView = false
+cardViewScreenWidth = false
+layoutBackgroundBlur = false
+disableHeroImageFilter = false
+homepageImage = "2025.08.05 - _MG_0116.jpg"
+
+[article]
+showDate = true
+showViews = true
+showLikes = true
+showDateOnlyInArticle = false
+showDateUpdated = true
+showAuthor = false
+showHero = true
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = false
+showDraftLabel = true
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = true
+showTableOfContents = true
+showTaxonomies = false
+showCategories = true
+showTags = true
+showCategoriesInSecondaryColor = false
+showAuthorsBadges = false
+showWordCount = true
+showZenMode = false
+
+[list]
+showHero = false
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = false
+showSummary = false
+showViews = false
+showLikes = false
+showTableOfContents = false
+showCards = false
+orderByWeight = false
+groupByYear = true
+cardView = false
+cardViewScreenWidth = false
+constrainItemsWidth = false
+
+[sitemap]
+excludedKinds = [ "taxonomy", "term" ]
+
+[taxonomy]
+showTermCount = true
+showHero = false
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = false
+showViews = false
+showLikes = false
+showTableOfContents = false
+cardView = false
+
+[term]
+showHero = false
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = false
+showViews = false
+showLikes = false
+showTableOfContents = true
+groupByYear = false
+cardView = false
+cardViewScreenWidth = false
+colorScheme = "princess"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+enableA11y = true
+enableSearch = true
+enableCodeCopy = false
+enableStructuredBreadcrumbs = false
+replyByEmail = true
+disableImageOptimization = false
+disableImageOptimizationMD = false
+disableTextInHeader = false
+hotlinkFeatureImage = false
+fingerprintAlgorithm = "sha512"
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v11.next.forgejo.org"
+fathomAnalytics = { }
+selineAnalytics = { }
+buymeacoffee = { }
+verification = { }
+rssnext = { }
+advertisement = { }
+showViews = true
+showLikes = true
+
+[firebase]
+apiKey = "AIzaSyBkEiNgeSCPIYLQwFpGX-sejvtuRSIDuGE"
+authDomain = "lbweb-post-likes-n-views.firebaseapp.com"
+projectId = "lbweb-post-likes-n-views"
+storageBucket = "lbweb-post-likes-n-views.firebasestorage.app"
+messagingSenderId = "225433503394"
+appId = "1:225433503394:web:f94d51ceeefa83f04c79fb"
+measurementId = "G-DB62FCYVEE"
 
 [umamiAnalytics]
 websiteid = "d78540f5-cfbc-470f-9b32-99e0343e1ed5"
