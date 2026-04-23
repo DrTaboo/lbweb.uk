@@ -11,7 +11,7 @@ rtl = false
 dateFormat = "2 January 2006"
 logo = "Signature V3 Inv BG White.png"
 description = "The portfolio of Lewis ███████: His photography, research papers, projects, and more!"
-copyright = "© 2026 Lewis | All Rights Reserved. Images licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)."
+copyright = "© 2026 Lewis | All Rights Reserved. Content licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)."
 secondaryLogo = "Signature V3 Inv BG Black.png"
 
   [params.author]
