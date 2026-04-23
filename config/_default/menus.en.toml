@@ -9,25 +9,25 @@ identifier = "gWYT9fqCDL"
 weight = 3
 
 [[main]]
-name = "Instagram"
-pre = "instagram"
-url = "https://www.instagram.com/lb.photography.gb/"
-identifier = "5PaNrGWjCr"
-weight = 4
-
-[[main]]
 name = "About Me"
-pre = "pencil"
+pre = "mug-hot"
 pageRef = "aboutme"
 identifier = "BEPNUG3cOS"
 weight = 1
 
 [[main]]
 name = "Publications"
-pre = "envelope"
+pre = "file-lines"
 pageRef = "publications"
 identifier = "ZG1UKqswdD"
 weight = 2
+
+[[main]]
+name = "Blog"
+pre = "pencil"
+pageRef = "blog"
+identifier = "0aZ9H3AqSD"
+weight = 4
 
 [[footer]]
 none = "none"

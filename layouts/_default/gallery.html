@@ -8,7 +8,7 @@
   </section>
 
   <section class="mt-10" id="gallery">
-    {{ range sort (.Resources.ByType "image") "Name" "desc" }}
+    {{ range sort (where (.Resources.ByType "image") "Name" "not in" (slice "cover.jpg" "featured.jpg" "background.jpg")) "Name" "desc" }}
     <div class="photo-row" data-src="{{ .RelPermalink }}">
       <div class="photo-col">
         <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="rounded-lg shadow-md">

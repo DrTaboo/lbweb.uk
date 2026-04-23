@@ -10,30 +10,121 @@
 </style>
 <div style="position: relative; width: 100%; min-height: 100vh;">
 
-  {{/* Background image - blurred */}}
-  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; 
-              background: url('/images/background.jpg') no-repeat center center; 
-              background-size: cover;
-              filter: blur(6px); transform: scale(1.05);">
+{{ $disableImageOptimization := site.Store.Get "disableImageOptimization" }}
+
+{{ $useDefault := false }}
+{{ $featured := "" }}
+{{ $featuredURL := "" }}
+{{ with .Params.featureimage }}
+  {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+    {{ if site.Params.hotlinkFeatureImage }}
+      {{ $featuredURL = . }}
+    {{ else }}
+      {{ $featured = resources.GetRemote . }}
+    {{ end }}
+  {{ else }}
+    {{ $featured = resources.Get . }}
+  {{ end }}
+{{ end }}
+
+{{ if not (or $featured $featuredURL) }}
+  {{ $images := .Resources.ByType "image" }}
+  {{ range slice "*background*" "*feature*" "*cover*" "*thumbnail*" }}
+    {{ if not $featured }}{{ $featured = $images.GetMatch . }}{{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if not (or $featured $featuredURL) }}
+  {{ $default := site.Store.Get "defaultBackgroundImage" }}
+  {{ if $default.url }}
+    {{ $featuredURL = $default.url }}
+    {{ $useDefault = true }}
+  {{ else if $default.obj }}
+    {{ $featured = $default.obj }}
+    {{ $useDefault = true }}
+  {{ end }}
+{{ end }}
+
+{{/* generate image URL if not hotlink */}}
+{{ if not $featuredURL }}
+  {{ with $featured }}
+    {{ $featuredURL = .RelPermalink }}
+    {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
+      {{ $size := site.Store.Get "backgroundImageWidth" }}
+      {{ $featuredURL = (.Resize $size).RelPermalink }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $scope := .Scratch.Get "scope" }}
+{{ $shouldBlur := $.Params.layoutBackgroundBlur | default (or
+  (and ($.Site.Params.article.layoutBackgroundBlur | default true) (eq $scope "single"))
+  (and ($.Site.Params.list.layoutBackgroundBlur | default true) (eq $scope "list"))
+  (and ($.Site.Params.taxonomy.layoutBackgroundBlur | default true) (eq $scope "terms"))
+  (and ($.Site.Params.term.layoutBackgroundBlur | default true) (eq $scope "term"))
+  )
+}}
+{{ $shouldAddHeaderSpace := $.Params.layoutBackgroundHeaderSpace | default (or
+  (and ($.Site.Params.article.layoutBackgroundHeaderSpace | default true) (eq $scope "single"))
+  (and ($.Site.Params.list.layoutBackgroundHeaderSpace | default true) (eq $scope "list"))
+  (and ($.Site.Params.taxonomy.layoutBackgroundHeaderSpace | default true) (eq $scope "terms"))
+  (and ($.Site.Params.term.layoutBackgroundHeaderSpace | default true) (eq $scope "term"))
+  )
+}}
+
+{{- with $featuredURL -}}
+  {{ if $shouldAddHeaderSpace | default true }}
+    <div id="hero" class="h-[150px] md:h-[200px]"></div>
+  {{ end }}
+  <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom">
+    {{ $style := "" }}
+    {{ $defaultPosition := cond $useDefault site.Params.imagePosition false }}
+    {{ with $.Params.imagePosition | default $defaultPosition }}
+      {{ $style = printf "object-position: %s;" . }}
+    {{ end }}
+    <img
+      id="background-image"
+      src="{{ . }}"
+      role="presentation"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+      {{ if $style }}style="{{ $style | safeCSS }}"{{ end }}>
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal"></div>
+    <div
+      class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal"></div>
   </div>
 
-  {{/* Dark overlay */}}
-  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; 
-              background: rgba(20, 10, 15, 0.55);">
-  </div>
+  {{ if $shouldBlur | default false }}
+    <div
+      id="background-blur"
+      class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-xl bg-neutral-100/75 dark:bg-neutral-800/60"></div>
+    {{ $backgroundBlur := resources.Get "js/background-blur.js" }}
+    {{ $backgroundBlur = $backgroundBlur | resources.Minify | resources.Fingerprint ($.Site.Params.fingerprintAlgorithm | default "sha512") }}
+    <script
+      type="text/javascript"
+      src="{{ $backgroundBlur.RelPermalink }}"
+      integrity="{{ $backgroundBlur.Data.Integrity }}"
+      data-blur-id="background-blur"
+      data-image-id="background-image"
+      data-image-url="{{ . }}"></script>
+  {{ end }}
+{{- end -}}
 
-  {{/* Content */}}
-  <div style="width: 100%; padding: 30px 0%; box-sizing: border-box; position: relative; z-index: 1;">
-    <header style="margin-bottom: 2rem;">
-      <h1 style="font-size: 4rem; font-weight: 900; color: white; margin: 0;">
-        {{ .Title }}
-      </h1>
-    </header>
-      
-    <div class="prose dark:prose-invert" style="max-width: 100%;">
-      {{ .Content }}
-    </div>
+
+{{/* Content */}}
+<div style="width: 100%; padding: 30px 0%; box-sizing: border-box; position: relative; z-index: 1;">
+  <header style="margin-bottom: 2rem;">
+    <h1 style="font-size: 4rem; font-weight: 900; color: white; margin: 0;">
+      {{ .Title }}
+    </h1>
+  </header>
+  <div class="prose dark:prose-invert" style="max-width: 100%;">
+    {{ .Content }}
   </div>
+</div>
 
 </div>
 {{ end }}

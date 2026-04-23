@@ -9,7 +9,77 @@
     <managingEditor>contactme@lbweb.uk (Lewis ███████)</managingEditor>
     <webMaster>contactme@lbweb.uk (Lewis ███████)</webMaster>
     <copyright>© 2026 Lewis | All Rights Reserved. Images licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).</copyright>
-    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Apr 2026 20:05:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Aviation</title>
+      <link>http://localhost:1313/photography/aviation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/aviation/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/aviation/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Cars &amp; Motorsports</title>
+      <link>http://localhost:1313/photography/cars/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/cars/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/cars/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>People &amp; Pets</title>
+      <link>http://localhost:1313/photography/people-n-pets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/people-n-pets/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/people-n-pets/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Nature</title>
+      <link>http://localhost:1313/photography/nature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/nature/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/nature/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Man-Made</title>
+      <link>http://localhost:1313/photography/man-made/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/man-made/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/man-made/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Miscellaneous</title>
+      <link>http://localhost:1313/photography/miscellaneous/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/miscellaneous/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/miscellaneous/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Website Release - 23.04.2026</title>
+      <link>http://localhost:1313/blog/website-release-23.04.2026/</link>
+      <pubDate>Thu, 23 Apr 2026 20:05:00 +0100</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/blog/website-release-23.04.2026/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>About Me</title>
@@ -22,11 +92,11 @@
     </item>
     
     <item>
-      <title>Nature</title>
-      <link>http://localhost:1313/photography/nature/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Enigma: The Code and The Crack</title>
+      <link>http://localhost:1313/publications/engima-tctc/</link>
+      <pubDate>Thu, 12 Feb 2026 17:28:14 +0100</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:1313/photography/nature/</guid>
+      <guid>http://localhost:1313/publications/engima-tctc/</guid>
       <description></description>
       
     </item>

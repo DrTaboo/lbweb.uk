@@ -1,5 +1,6 @@
 ---
 title: "Nature"
+weight: 40
 layout: "gallery"
 showDate: false
 showViews: true
@@ -9,5 +10,6 @@ showWordCount: false
 showDateUpdated: true
 ---
 
-My nature photography!
+Photography centered around living-organisms and the natural landscape.
+
 *These images are licensed under CC BY-NC-ND.*

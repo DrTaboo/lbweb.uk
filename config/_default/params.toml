@@ -27,7 +27,7 @@ showLikes = true
 websiteid = "d78540f5-cfbc-470f-9b32-99e0343e1ed5"
 
 [header]
-layout = "fixed-fill-blur"
+layout = "fixed"
 
 [footer]
 showMenu = true
@@ -38,10 +38,9 @@ showScrollToTop = true
 
 [homepage]
 layout = "background"
-showRecent = true
-showRecentItems = 5
+showRecent = false
 showMoreLink = false
-showMoreLinkDest = "/posts/"
+showMoreLinkDest = "/blog/"
 cardView = false
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
