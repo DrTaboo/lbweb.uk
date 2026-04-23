@@ -8,7 +8,7 @@ Hai!
 
 ## Information
 
-I have finally finished my personal website. This has been a difficult project, however incredibly fun to complete. I went through two different full itterations of this website, where my original itteration was almost complete with the Hugo Toha theme, however I didn't like the style so I started from scratch with the Hugo Blowfish theme. 
+I have finally finished my personal website. This has been a difficult project, however incredibly fun to complete. I went through two different full iterations of this website, where my original iteration was almost complete with the Hugo Toha theme, however I didn't like the style so I started from scratch with the Hugo Blowfish theme. 
 
 ## My Journey
 
@@ -18,7 +18,7 @@ I wanted to go through my journey in this post, as to make sure I have a post to
 
 I didn't really know what to put on the homepage, however finally decided upon some project cards, the recent blog post list, and a shortcut to my photography that looked good. I have no idea what else to add so I stuck with it.
 
-The real pain with making this homepage was trying to get the two project cards to be side-by-side while also accounting for smaller displays. I was originally using a margin of `-225px` to get it at a suitable size on a desktop screen, however that didnt work with mobile devices as it would go straight past the screen's limits. To combat this, I ended up writing the cards inside a `<style>` block rather than using inline styles. This allowed me to use media queries, where the outside wrapper uses `-215px` margins to break outside of Blowfish's narrow content column for desktop, but also at `1024px` and below that margin is zeroed out before the cards get squished, and at `640px` the grid drops from two collumns down to a single one.
+The real pain with making this homepage was trying to get the two project cards to be side-by-side while also accounting for smaller displays. I was originally using a margin of `-225px` to get it at a suitable size on a desktop screen, however that didn't work with mobile devices as it would go straight past the screen's limits. To combat this, I ended up writing the cards inside a `<style>` block rather than using inline styles. This allowed me to use media queries, where the outside wrapper uses `-215px` margins to break outside of Blowfish's narrow content column for desktop, but also at `1024px` and below that margin is zeroed out before the cards get squished, and at `640px` the grid drops from two columns down to a single one.
 
 ### Photography Page
 
@@ -30,7 +30,7 @@ This was simple page to design. The only hurdle I had to cross was trying to dis
 
 ### About Me Page
 
-This was a handfull to create. The text and buttons were simple, however the background fade to pink was a horrendous hurdle to cross. I tried many differnet methods, and ended up taking the theme's style from the homepage and copying it into the about me custom layout, praying it would work. Luckily, it did and I didnt have to faf around trying to change stuff, or figuring out where to put the background image.
+This was a handfull to create. The text and buttons were simple, however the background fade to pink was a horrendous hurdle to cross. I tried many differnet methods, and ended up taking the theme's style from the homepage and copying it into the about me custom layout, praying it would work. Luckily, it did and I didn't have to faf around trying to change stuff, or figuring out where to put the background image.
 
 ## Anyway.
 
