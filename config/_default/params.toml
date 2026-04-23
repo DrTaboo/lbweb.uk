@@ -13,7 +13,6 @@ hotlinkFeatureImage = false
 fingerprintAlgorithm = "sha512"
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v11.next.forgejo.org"
-firebase = { }
 fathomAnalytics = { }
 selineAnalytics = { }
 buymeacoffee = { }
@@ -22,6 +21,15 @@ rssnext = { }
 advertisement = { }
 showViews = true
 showLikes = true
+
+[firebase]
+apiKey = "AIzaSyBkEiNgeSCPIYLQwFpGX-sejvtuRSIDuGE"
+authDomain = "lbweb-post-likes-n-views.firebaseapp.com"
+projectId = "lbweb-post-likes-n-views"
+storageBucket = "lbweb-post-likes-n-views.firebasestorage.app"
+messagingSenderId = "225433503394"
+appId = "1:225433503394:web:f94d51ceeefa83f04c79fb"
+measurementId = "G-DB62FCYVEE"
 
 [umamiAnalytics]
 websiteid = "d78540f5-cfbc-470f-9b32-99e0343e1ed5"
