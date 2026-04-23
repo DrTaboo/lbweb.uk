@@ -19,8 +19,6 @@ buymeacoffee = { }
 verification = { }
 rssnext = { }
 advertisement = { }
-showViews = true
-showLikes = true
 
 [firebase]
 apiKey = "AIzaSyBkEiNgeSCPIYLQwFpGX-sejvtuRSIDuGE"
