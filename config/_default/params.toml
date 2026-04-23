@@ -32,7 +32,7 @@ databaseURL = "https://lbweb-post-likes-n-views-default-rtdb.europe-west1.fireba
 
 [umamiAnalytics]
 websiteid = "d78540f5-cfbc-470f-9b32-99e0343e1ed5"
-src = "https://lbweb.uk/stats/script.js"
+domain = "lbweb.uk/stats"
 
 [header]
 layout = "fixed"
