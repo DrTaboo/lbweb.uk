@@ -6,12 +6,111 @@
   <section class="mt-6 prose dark:prose-invert">
     {{ .Content }}
   </section>
-  <section class="flex flex-wrap mt-10">
-    {{ range .Resources.ByType "image" }}
-    <div class="w-full p-2 sm:w-1/2 md:w-1/3">
-      <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="rounded-lg shadow-md cursor-pointer hover:opacity-90">
+
+  <section class="mt-10" id="gallery">
+    {{ range sort (.Resources.ByType "image") "Name" "desc" }}
+    <div class="photo-row" data-src="{{ .RelPermalink }}">
+      <div class="photo-col">
+        <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="rounded-lg shadow-md">
+      </div>
+      <div class="exif-col">
+        <p class="exif-loading">Loading metadata...</p>
+      </div>
     </div>
     {{ end }}
   </section>
 </article>
+
+<style>
+  .photo-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+  }
+  .photo-col {
+    flex: 1;
+    min-width: 0;
+  }
+  .photo-col img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .exif-col {
+    flex: 1;
+    min-width: 0;
+    padding-top: 0.5rem;
+  }
+  .exif-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .exif-table td {
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid rgba(128,128,128,0.2);
+  }
+  .exif-table td:first-child {
+    font-weight: 600;
+    opacity: 0.6;
+    white-space: nowrap;
+    width: 40%;
+  }
+  .exif-loading {
+    opacity: 0.4;
+    font-style: italic;
+  }
+  .exif-error {
+    opacity: 0.4;
+    font-style: italic;
+    font-size: 0.85rem;
+  }
+</style>
+
+<script type="module">
+  import exifr from 'https://cdn.jsdelivr.net/npm/exifr/dist/full.esm.js';
+
+  const rows = document.querySelectorAll('.photo-row');
+
+  for (const row of rows) {
+    const src = row.dataset.src;
+    const exifCol = row.querySelector('.exif-col');
+
+    try {
+      const exif = await exifr.parse(src, {
+        pick: ['Make', 'Model', 'FNumber', 'ExposureTime', 'ISO', 'FocalLength', 'DateTimeOriginal', 'Flash']
+      });
+
+      if (!exif) {
+        exifCol.innerHTML = '<p class="exif-error">No metadata found.</p>';
+        continue;
+      }
+
+      const fmt = (v) => v !== undefined ? v : '—';
+      const fnum = exif.FNumber ? `f/${exif.FNumber}` : '—';
+      const shutter = exif.ExposureTime
+        ? exif.ExposureTime < 1
+          ? `1/${Math.round(1 / exif.ExposureTime)}s`
+          : `${exif.ExposureTime}s`
+        : '—';
+      const date = exif.DateTimeOriginal
+        ? new Date(exif.DateTimeOriginal).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+        : '—';
+
+      exifCol.innerHTML = `
+        <table class="exif-table">
+          <tr><td>Camera</td><td>${fmt(exif.Make)} ${fmt(exif.Model)}</td></tr>
+          <tr><td>Aperture</td><td>${fnum}</td></tr>
+          <tr><td>Shutter</td><td>${shutter}</td></tr>
+          <tr><td>ISO</td><td>${fmt(exif.ISO)}</td></tr>
+          <tr><td>Focal length</td><td>${exif.FocalLength ? exif.FocalLength + 'mm' : '—'}</td></tr>
+          <tr><td>Date taken</td><td>${date}</td></tr>
+        </table>
+      `;
+    } catch (e) {
+      exifCol.innerHTML = '<p class="exif-error">Could not read metadata.</p>';
+    }
+  }
+</script>
 {{ end }}

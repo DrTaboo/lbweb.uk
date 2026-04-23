@@ -22,11 +22,11 @@
     </item>
     
     <item>
-      <title>Photography</title>
-      <link>http://localhost:1313/photography/</link>
+      <title>Nature</title>
+      <link>http://localhost:1313/photography/nature/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:1313/photography/</guid>
+      <guid>http://localhost:1313/photography/nature/</guid>
       <description></description>
       
     </item>
