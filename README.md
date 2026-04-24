@@ -1,5 +1,5 @@
-<div align="center"># lbweb.uk</div>
-# Website Source Code
+<div align="center"><h1>lbweb.uk</h1></div>
+<div align="center"><h1>Website Source Code</h1></div>
 
 Hai!
 This is the source code of my website hosted at [lbweb.uk](https://www.lbweb.uk)
