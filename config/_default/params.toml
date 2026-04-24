@@ -16,7 +16,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 fathomAnalytics = { }
 selineAnalytics = { }
 buymeacoffee = { }
-verification = { }
+verification = { google = "r2D3w6_efwJgKfi-7HWt3Unf6ROnGgK5iiNvaUDxsgY" }
 rssnext = { }
 advertisement = { }
 
