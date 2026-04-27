@@ -1,3 +1,9 @@
+---
+title: "Portfolio of Lewis ███████"
+description: "The portfolio of Lewis ███████: His photography, research papers, projects, and more!"
+keywords: ["Lewis", "photography", "enigma", "personal site", "portfolio", "lbweb", "uk"]
+---
+
 ## My current projects
 
 <style>
