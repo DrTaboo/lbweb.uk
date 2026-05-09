@@ -1,43 +1,91 @@
 ---
 title: "About Me"
 date: 2026-04-22
-layout: "aboutmebg"
-hero: "basic"
+layout: "aboutme"
 showDate: false
 showReadingTime: false
 showWordCount: false
 showTableOfContents: false
 showReplyByEmail: false
 showComments: false
-background: background.jpg
 ---
 
-<style>
-  .prose, article {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-</style>
+I am a student based in the United Kingdom, focusing on science and analysis of data. My academic background focuses on Chemistry, Physics, and Statistics, where I enjoy exploring the fundamental laws of the natural world and the data behind them.
+Aside from my studies, I like to focus my time on other projects that can be found below. 
 
-
-<div style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
-
-  <div style="flex: 1; min-width: 300px;">
-    <h3>Hello!</h3>
-    <p>Based in the United Kingdom, I am a student who focuses on Science and the analysis of data. My academic background focuses on Chemistry, Physics, and Statistics, where I enjoy exploring the fundamental laws of the natural world and the data behind them.</p>
-    <p>Aside from studies, I focus my time on Photography, Research, and homelabbing. For example, I photograph the world around me using a Canon 1000D and Adobe Lightroom Classic. <a href="/photography" style="color: #f43f5e; font-weight: bold; text-decoration: underline;">Take a look at some of my photographs here!</a></p>
-	<p>Regarding the research, I am producing research papers on things that interest me. I am currently creating a research paper on the Enigma Code; specifically on its history pre-world-war, its usage in the war, how the machines work, and the bombe that was used to crack the code during the second world war. I am also looking to produce another research paper on the Large Hadron Collider (LHC) at CERN. <a href="/publications" style="color: #f43f5e; font-weight: bold; text-decoration: underline;">My finished papers can be found here!</a></p>
-	<p>Finally, the homelabing hobby is a large and constantly growing hobby. I have a server stack which I am constantly upgrading and messing around with, to create things like this website, an XRAY VPN, a windows SMB server, etc. My latest project has been the creation of this website, and its hosting from my servers.</p>
-	<div style="margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap;">
-  <a href="https://instagram.com/lb.photography.gb" style="background: #f43f5e; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600;">Instagram</a>
-  <a href="mailto:contactme@lbweb.uk" style="background: #4b5563; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600;">Email</a>
-  <a href="https://github.com/DrTabpp" style="background: #1f2937; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600;">GitHub</a>
-  <a href="https://discord.com/users/drtaboo" style="background: #5865f2; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600;">Discord</a>
+<div>
+<hr style="border:none;border-top:0.5px solid rgba(255,255,255,0.1);margin-bottom:40px;">
 </div>
-  </div>
 
-  <div style="flex-shrink: 0; margin-top: 1rem;">
-    <img src="pfp.png" style="border-radius: 20px; width: 150px; height: 150px; object-fit: cover;">
-  </div>
+## What I Do
 
+<div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:48px;">
+<!-- CARD 1: PHOTOGRAPHY — change link and text as needed -->
+<div style="background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;">
+<p style="font-size:15px;font-weight:600;color:#fff;margin:0 0 8px;">Photography</p>
+<p style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;margin:0 0 14px;">Shooting the world around me with a Canon 1000D, and editing in Adobe Lightroom Classic.</p>
+<a href="/photography/" style="font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;border-bottom:0.5px solid rgba(255,255,255,0.15);">View my gallery →</a>	
+</div>
+<!-- CARD 2: RESEARCH — change progress % (both width and label text) and link -->
+<div style="background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;">
+<p style="font-size:15px;font-weight:600;color:#fff;margin:0 0 8px;">Research</p>
+<p style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;margin:0 0 10px;">Writing research papers on topics that interest me. Currently focusing on a paper revolving around Enigma Code. My progress on this paper is currently:</p>
+<div style="display:flex;align-items:center;gap:6px;margin-bottom:10px;">
+<div style="flex:1;height:3px;background:rgba(255,255,255,0.1);border-radius:99px;overflow:hidden;">
+<!-- CHANGE width:55% to match actual progress -->
+<div style="width:65%;height:100%;background:rgba(255,255,255,0.4);border-radius:99px;"></div>
+</div>
+<!-- CHANGE label text to match -->
+<span style="font-size:11px;color:rgba(255,255,255,0.35);white-space:nowrap;">65% complete</span>
+</div>
+<a href="/publications/" style="font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;border-bottom:0.5px solid rgba(255,255,255,0.15);">View my papers →</a>
+</div>
+<!-- CARD 3: HOMELABBING — change badge colour/text: #10b981 green = live, #f43f5e red = in progress, #6b7280 grey = paused -->
+<div style="background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;">
+<p style="font-size:15px;font-weight:600;color:#fff;margin:0 0 8px;">Homelabbing</p>
+<p style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;margin:0 0 10px;">Running and maintaining a small server stack. This includes personal VPNs, Game servers, CaddyDNS, Jellyfin, and this very website.</p>
+<!-- CHANGE badge colour and text as needed -->
+<span style="background:#10b981;color:#fff;font-size:11px;padding:3px 10px;border-radius:999px;">Live & Growing</span>
+</div>
+</div>
+</div>
+
+
+## Socials
+Hover over the icons, or click them to see my socials or contact me:
+‎ <!-- DIVIDER - Invisible Character since spaces and new lines do shit all -->
+<div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-start;">
+<a href="mailto:contactme@lbweb.uk" aria-label="Email me"
+style="position:relative;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:0.5px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.75);text-decoration:none;font-size:14px;transition:background 0.15s,color 0.15s,transform 0.15s;"
+onmouseenter="this.style.background='rgba(255,255,255,0.12)';this.style.color='#fff';this.style.transform='translateY(-2px)';this.querySelector('span')&&(this.querySelector('span').style.opacity='1')"
+onmouseleave="this.style.background='rgba(255,255,255,0.06)';this.style.color='rgba(255,255,255,0.75)';this.style.transform='';this.querySelector('span')&&(this.querySelector('span').style.opacity='0')">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+Email me
+<span style="position:absolute;bottom:calc(100% + 8px);left:62%;transform:translateX(-50%);background:rgba(255,255,255,0.12);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;border:0.5px solid rgba(255,255,255,0.2);">contactme @lbweb.uk</span>
+</a>
+<a href="https://www.instagram.com/lb.photography.gb/" target="_blank" rel="noopener" aria-label="Instagram"
+style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:0.5px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.75);text-decoration:none;font-size:14px;transition:background 0.15s,color 0.15s,transform 0.15s;"
+onmouseenter="this.style.background='rgba(255,255,255,0.12)';this.style.color='#fff';this.style.transform='translateY(-2px)';this.querySelector('span')&&(this.querySelector('span').style.opacity='1')"
+onmouseleave="this.style.background='rgba(255,255,255,0.06)';this.style.color='rgba(255,255,255,0.75)';this.style.transform='';this.querySelector('span')&&(this.querySelector('span').style.opacity='0')">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+Instagram
+<span style="position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.12);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;border:0.5px solid rgba(255,255,255,0.2);">@lb.photography.gb</span>
+</a>
+<a href="#" aria-label="Discord"
+style="position:relative;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:0.5px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.75);text-decoration:none;font-size:14px;transition:background 0.15s,color 0.15s,transform 0.15s;"
+onmouseenter="this.style.background='rgba(255,255,255,0.12)';this.style.color='#fff';this.style.transform='translateY(-2px)';this.querySelector('span').style.opacity='1'"
+onmouseleave="this.style.background='rgba(255,255,255,0.06)';this.style.color='rgba(255,255,255,0.75)';this.style.transform='';this.querySelector('span').style.opacity='0'">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+Discord Username
+<span style="position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.12);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;border:0.5px solid rgba(255,255,255,0.2);">@drtaboo</span>
+</a>
+<a href="https://github.com/DrTaboo" target="_blank" rel="noopener" aria-label="GitHub"
+style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:0.5px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.75);text-decoration:none;font-size:14px;transition:background 0.15s,color 0.15s,transform 0.15s;"
+onmouseenter="this.style.background='rgba(255,255,255,0.12)';this.style.color='#fff';this.style.transform='translateY(-2px)';this.querySelector('span')&&(this.querySelector('span').style.opacity='1')"
+onmouseleave="this.style.background='rgba(255,255,255,0.06)';this.style.color='rgba(255,255,255,0.75)';this.style.transform='';this.querySelector('span')&&(this.querySelector('span').style.opacity='0')">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+GitHub Profile
+<span style="position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.12);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;border:0.5px solid rgba(255,255,255,0.2);">@DrTaboo</span>
+</a>
 </div>
