@@ -51,6 +51,10 @@ Aside from my studies, I like to focus my time on other projects that can be fou
 </div>
 </div>
 
+<!-- =================================================
+DID YOU CHANGE THE PERCENTAGES ON THE HOMEPAGE TOO?? 
+======================================================-->
+
 
 ## Socials
 Hover over the icons, or click them to see my socials or contact me:

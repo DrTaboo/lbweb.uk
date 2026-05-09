@@ -63,6 +63,10 @@ onmouseleave="this.style.opacity='0.75';this.style.transform='';this.querySelect
 }
 </style>
 
+<!-- =====================================================
+DID YOU CHANGE THE PERCENTAGES ON THE ABOUTME PAGE TOO?? 
+==========================================================-->
+
 <div class="projects-outer">
 <div class="projects-grid">
 <!-- ============================================================
