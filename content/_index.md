@@ -4,9 +4,18 @@ description: "The portfolio of Lewis ███████: His photography, res
 keywords: ["Lewis", "photography", "enigma", "personal site", "portfolio", "lbweb", "uk"]
 ---
 
-#### The portfolio of Lewis ███████, displaying his photography, research papers, projects, and more!
-#### Take a look around. I hope you enjoy!
-
+<h1 style="font-size: 1rem; font-weight: bold; margin-bottom: 0.5rem; text-align: center; border: none; padding: 0;">
+  The portfolio of Lewis ███████, displaying his photography, research papers, projects, and more!
+</h1>
+<h2 style="font-size: 1rem; font-weight: bold; margin-bottom: 1.5rem; text-align: center; border: none; padding: 0;">
+  Take a look around. I hope you enjoy!
+</h2> <!-- Im using a h1 and h2 header tag as to hope that Google takes this as a website description, rather than the project cards below. I also made it a smaller text to make it look better on the homepage. why the FUCK does google not use the metadata description. -->
+	
+<div style="font-size: 1rem; font-weight: bold; margin-bottom: 2.5rem; text-align: center; border: none; padding: 0;">
+  <!-- DIVIDER - Invisible Character since spaces and new lines do shit all, and the div to allow room for the icons below to breath with onmouse events -->
+</div>
+	
+<!-- Social Icons & links -->
 <div style="display:flex; align-items:center; gap:4px; justify-content:center;">
 <a href="mailto:contactme@lbweb.uk" aria-label="Email me"
 style="position:relative;display:flex;align-items:center;justify-content:center;width:36px;height:36px;text-decoration:none;opacity:0.75;transition:transform 0.15s,opacity 0.15s;"
@@ -38,7 +47,9 @@ onmouseleave="this.style.opacity='0.75';this.style.transform='';this.querySelect
 </a>
 </div>
 
-‎ <!-- DIVIDER - Invisible Character since spaces and new lines do shit all -->
+<div>
+<hr style="border:none;border-top:0.5px solid rgba(255,255,255,0.1);margin-bottom:40px;"> <!-- DIVIDER -->
+</div>
 
 ## My current projects
 <style>
@@ -67,7 +78,7 @@ onmouseleave="this.style.opacity='0.75';this.style.transform='';this.querySelect
 DID YOU CHANGE THE PERCENTAGES ON THE ABOUTME PAGE TOO?? 
 ==========================================================-->
 
-<div class="projects-outer">
+<div class="projects-outer" data-nosnippet>
 <div class="projects-grid">
 <!-- ============================================================
      CARD 1: Research project - ENIGMA

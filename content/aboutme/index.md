@@ -14,7 +14,7 @@ I am a student based in the United Kingdom, focusing on science and analysis of 
 Aside from my studies, I like to focus my time on other projects that can be found below. 
 
 <div>
-<hr style="border:none;border-top:0.5px solid rgba(255,255,255,0.1);margin-bottom:40px;">
+<hr style="border:none;border-top:0.5px solid rgba(255,255,255,0.1);margin-bottom:40px;"> <!-- DIVIDER -->
 </div>
 
 ## What I Do
@@ -58,7 +58,11 @@ DID YOU CHANGE THE PERCENTAGES ON THE HOMEPAGE TOO??
 
 ## Socials
 Hover over the icons, or click them to see my socials or contact me:
-‎ <!-- DIVIDER - Invisible Character since spaces and new lines do shit all -->
+
+<div style="font-size: 1rem; font-weight: bold; margin-bottom: 2.5rem; text-align: center; border: none; padding: 0;">
+  <!-- DIVIDER - Invisible Character since spaces and new lines do shit all, and the div to allow room for the icons below to breath with onmouse events -->
+</div>
+
 <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-start;">
 <a href="mailto:contactme@lbweb.uk" aria-label="Email me"
 style="position:relative;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:0.5px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.75);text-decoration:none;font-size:14px;transition:background 0.15s,color 0.15s,transform 0.15s;"
