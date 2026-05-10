@@ -24,4 +24,4 @@ This work is licensed under CC BY-NC-ND 4.0. You are free to copy and redistribu
 
 ## The actual document
 
-{{< pdf src="enigma.pdf" >}}
+{{< pdf-viewer "/pdfs/placeholder.pdf" >}}

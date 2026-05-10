@@ -1,0 +1,99 @@
+<style>
+.pdf-header-actions {
+    max-width: 800px;
+    margin: 20px auto 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; /* Adds consistent spacing between the two buttons */
+}
+.pdf-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+.pdf-action-btn:hover {
+    background: #f43f5e; /* Matches your accent theme red color */
+    border-color: transparent;
+}
+.pdf-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    aspect-ratio: 3 / 4;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.mobile-pdf-fallback {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    max-width: 500px;
+}
+@media (max-width: 768px) {
+    .pdf-header-actions { display: none; }
+    .pdf-container { display: none; }
+    .mobile-pdf-fallback { display: block; }
+}
+</style>
+
+<!-- Desktop View Header Actions -->
+<div class="pdf-header-actions">
+    <!-- Print Button -->
+    <button onclick="printIframePDF()" class="pdf-action-btn" title="Print Document">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print
+    </button>
+
+    <!-- Download Button -->
+    <a href="{{ .Get 0 }}" download class="pdf-action-btn" title="Download Document">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download
+    </a>
+</div>
+
+<!-- Desktop Document Container -->
+<div class="pdf-container">
+    <iframe id="pdf-document-iframe" src="{{ .Get 0 }}#toolbar=0&navpanes=0"></iframe>
+</div>
+
+<!-- Mobile View Container -->
+<div class="mobile-pdf-fallback">
+    <p style="margin-bottom: 15px; font-size: 14px; opacity: 0.8;">
+        Previewing PDFs directly is limited on mobile devices.
+    </p>
+    <a href="{{ .Get 0 }}" download class="hover:opacity-90" 
+       style="background: #f43f5e; color: #fff; padding: 10px 20px; border-radius: 8px; display: inline-block; font-size: 14px; font-weight: bold; text-decoration: none; transition: opacity 0.15s;">
+        Open / Download Document (PDF)
+    </a>
+</div>
+
+<script>
+function printIframePDF() {
+    const iframe = document.getElementById('pdf-document-iframe');
+    if (iframe) {
+        iframe.contentWindow.focus();
+        iframe.contentWindow.print();
+    }
+}
+</script>
