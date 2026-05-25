@@ -32,6 +32,16 @@
     </item>
     
     <item>
+      <title>Public Transport &amp; Services</title>
+      <link>http://localhost:1313/photography/transport-n-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/photography/transport-n-services/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/transport-n-services/cover.jpg" />
+    </item>
+    
+    <item>
       <title>People &amp; Pets</title>
       <link>http://localhost:1313/photography/people-n-pets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -69,6 +79,26 @@
       <guid>http://localhost:1313/photography/miscellaneous/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/miscellaneous/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Chelsea Flower Show - 23.05.2026</title>
+      <link>http://localhost:1313/albums/chelsea-flower-show---23.05.2026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/albums/chelsea-flower-show---23.05.2026/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/albums/chelsea-flower-show---23.05.2026/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Model Village Collection - 12.02.2024</title>
+      <link>http://localhost:1313/albums/model-village---12.02.2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contactme@lbweb.uk (Lewis ███████)</author>
+      <guid>http://localhost:1313/albums/model-village---12.02.2024/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/albums/model-village---12.02.2024/cover.jpg" />
     </item>
     
     <item>

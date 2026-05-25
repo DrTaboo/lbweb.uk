@@ -3,85 +3,105 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/photography/aviation/</loc>
+    <loc>http://localhost:62583/photography/aviation/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/photography/cars/</loc>
+    <loc>http://localhost:62583/photography/cars/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/photography/people-n-pets/</loc>
+    <loc>http://localhost:62583/photography/transport-n-services/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/photography/nature/</loc>
+    <loc>http://localhost:62583/photography/people-n-pets/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/photography/man-made/</loc>
+    <loc>http://localhost:62583/photography/nature/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/photography/miscellaneous/</loc>
+    <loc>http://localhost:62583/photography/man-made/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>http://localhost:62583/photography/miscellaneous/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:62583/albums/chelsea-flower-show---23.05.2026/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:62583/albums/model-village---12.02.2024/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:62583/blog/</loc>
     <lastmod>2026-05-10T13:30:00+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:62583/</loc>
     <lastmod>2026-05-10T13:30:00+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/blog/website-update-10.05.2026/</loc>
+    <loc>http://localhost:62583/blog/website-update-10.05.2026/</loc>
     <lastmod>2026-05-10T13:30:00+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/blog/website-release-23.04.2026/</loc>
+    <loc>http://localhost:62583/blog/website-release-23.04.2026/</loc>
     <lastmod>2026-04-23T20:05:00+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/aboutme.old/</loc>
+    <loc>http://localhost:62583/aboutme.old/</loc>
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/aboutme/</loc>
+    <loc>http://localhost:62583/aboutme/</loc>
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publications/engima-tctc/</loc>
+    <loc>http://localhost:62583/publications/engima-tctc/</loc>
     <lastmod>2026-02-12T17:28:14+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>http://localhost:62583/publications/</loc>
     <lastmod>2026-02-12T17:28:14+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/photography/</loc>
+    <loc>http://localhost:62583/albums/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:62583/photography/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

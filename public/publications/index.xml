@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Portfolio of Lewis ███████</title>
-    <link>http://localhost:1313/publications/</link>
+    <link>http://localhost:62583/publications/</link>
     <description>Recent content in Publications on Portfolio of Lewis ███████</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>contactme@lbweb.uk (Lewis ███████)</managingEditor>
     <webMaster>contactme@lbweb.uk (Lewis ███████)</webMaster>
     <copyright>__© 2026 Lewis B.__ | All Rights Reserved. Content licensed under &lt;u&gt;[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)&lt;/u&gt; unless otherwise stated.</copyright>
-    <lastBuildDate>Thu, 12 Feb 2026 17:28:14 +0100</lastBuildDate><atom:link href="http://localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Feb 2026 17:28:14 +0100</lastBuildDate><atom:link href="http://localhost:62583/publications/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Enigma: The Code and The Crack</title>
-      <link>http://localhost:1313/publications/engima-tctc/</link>
+      <link>http://localhost:62583/publications/engima-tctc/</link>
       <pubDate>Thu, 12 Feb 2026 17:28:14 +0100</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:1313/publications/engima-tctc/</guid>
+      <guid>http://localhost:62583/publications/engima-tctc/</guid>
       <description></description>
       
     </item>

@@ -17,7 +17,7 @@ weight = 1
 
 [[main]]
 name = "Publications"
-pre = "file-lines"
+pre = "graduation-cap"
 pageRef = "publications"
 identifier = "ZG1UKqswdD"
 weight = 2
@@ -27,6 +27,13 @@ name = "Blog"
 pre = "pencil"
 pageRef = "blog"
 identifier = "0aZ9H3AqSD"
+weight = 5
+
+[[main]]
+name = "Albums"
+pre = "file-lines"
+pageRef = "albums"
+identifier = "PSaIA1Slou"
 weight = 4
 
 [[footer]]
