@@ -4,3 +4,4 @@ content/aboutme.old/
 themes/blowfish
 .hugo_build.lock
 *.uk
+*.option
