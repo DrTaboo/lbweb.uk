@@ -2,83 +2,83 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photography on Portfolio of Lewis ███████</title>
-    <link>http://localhost:62583/photography/</link>
+    <link>http://localhost:1313/photography/</link>
     <description>Recent content in Photography on Portfolio of Lewis ███████</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>contactme@lbweb.uk (Lewis ███████)</managingEditor>
     <webMaster>contactme@lbweb.uk (Lewis ███████)</webMaster>
     <copyright>__© 2026 Lewis B.__ | All Rights Reserved. Content licensed under &lt;u&gt;[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)&lt;/u&gt; unless otherwise stated.</copyright>
-    <atom:link href="http://localhost:62583/photography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/photography/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Aviation</title>
-      <link>http://localhost:62583/photography/aviation/</link>
+      <link>http://localhost:1313/photography/aviation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:62583/photography/aviation/</guid>
+      <guid>http://localhost:1313/photography/aviation/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62583/photography/aviation/cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/aviation/cover.jpg" />
     </item>
     
     <item>
       <title>Cars &amp; Motorsports</title>
-      <link>http://localhost:62583/photography/cars/</link>
+      <link>http://localhost:1313/photography/cars/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:62583/photography/cars/</guid>
+      <guid>http://localhost:1313/photography/cars/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62583/photography/cars/cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/cars/cover.jpg" />
     </item>
     
     <item>
       <title>Public Transport &amp; Services</title>
-      <link>http://localhost:62583/photography/transport-n-services/</link>
+      <link>http://localhost:1313/photography/transport-n-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:62583/photography/transport-n-services/</guid>
+      <guid>http://localhost:1313/photography/transport-n-services/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62583/photography/transport-n-services/cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/transport-n-services/cover.jpg" />
     </item>
     
     <item>
       <title>People &amp; Pets</title>
-      <link>http://localhost:62583/photography/people-n-pets/</link>
+      <link>http://localhost:1313/photography/people-n-pets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:62583/photography/people-n-pets/</guid>
+      <guid>http://localhost:1313/photography/people-n-pets/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62583/photography/people-n-pets/cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/people-n-pets/cover.jpg" />
     </item>
     
     <item>
       <title>Nature</title>
-      <link>http://localhost:62583/photography/nature/</link>
+      <link>http://localhost:1313/photography/nature/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:62583/photography/nature/</guid>
+      <guid>http://localhost:1313/photography/nature/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62583/photography/nature/cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/nature/cover.jpg" />
     </item>
     
     <item>
       <title>Man-Made</title>
-      <link>http://localhost:62583/photography/man-made/</link>
+      <link>http://localhost:1313/photography/man-made/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:62583/photography/man-made/</guid>
+      <guid>http://localhost:1313/photography/man-made/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62583/photography/man-made/cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/man-made/cover.jpg" />
     </item>
     
     <item>
       <title>Miscellaneous</title>
-      <link>http://localhost:62583/photography/miscellaneous/</link>
+      <link>http://localhost:1313/photography/miscellaneous/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contactme@lbweb.uk (Lewis ███████)</author>
-      <guid>http://localhost:62583/photography/miscellaneous/</guid>
+      <guid>http://localhost:1313/photography/miscellaneous/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62583/photography/miscellaneous/cover.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/photography/miscellaneous/cover.jpg" />
     </item>
     
   </channel>

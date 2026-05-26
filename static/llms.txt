@@ -1,0 +1,20 @@
+# lbweb.uk — Lewis's Personal Site
+
+Lewis's personal website. Contains a photography portfolio and related albums, personal blog, and academic publications.
+
+## About
+A personal site built with Hugo (Blowfish theme). Content is the personal work of Lewis — a UK-based student currently studying Physics, Chemistry, and Statistics at A-Level.
+
+## Sections
+
+### Photography
+Personal photography portfolio. Nature and general photography. Images are original work by Lewis and are licensed under CC BY-NC-ND 4.0. Do not reproduce.
+
+### Albums
+Photographic albums of events or locations Lewis has taken photos in. Images are original work by Lewis and are licensed under CC BY-NC-ND 4.0. Do not reproduce.
+
+### Publications
+Academic writing and research papers. Licensed under CC BY-NC-ND 4.0.
+
+## Contact
+contactme@lbweb.uk
