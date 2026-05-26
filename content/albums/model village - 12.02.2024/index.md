@@ -8,6 +8,7 @@ showLikes: true
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true
+hideFeatureImage: true
 ---
 
 These are photographs taken from a Model Village in the United Kindgom.

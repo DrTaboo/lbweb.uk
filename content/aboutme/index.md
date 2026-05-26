@@ -26,6 +26,8 @@ Aside from my studies, I like to focus my time on other projects that can be fou
 <p style="font-size:15px;font-weight:600;color:#fff;margin:0 0 8px;">Photography</p>
 <p style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;margin:0 0 14px;">Shooting the world around me with a Canon 1000D, and editing in Adobe Lightroom Classic.</p>
 <a href="/photography/" style="font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;border-bottom:0.5px solid rgba(255,255,255,0.15);">View my gallery →</a>	
+<p style="font-size:1px"> </p>
+<a href="/albums/" style="font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;border-bottom:0.5px solid rgba(255,255,255,0.15);">View my photographic albums →</a>	
 </div>
 <!-- CARD 2: RESEARCH — change progress % (both width and label text) and link -->
 <div style="background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;">

@@ -1,7 +1,10 @@
 {{ define "main" }}
 <article>
   <header>
-    <h1 class="text-4xl font-extrabold">{{ .Title }}</h1>
+    <h1 class="mb-0 text-4xl font-extrabold">{{ .Title }}</h1>
+    <section class="mt-0 prose dark:prose-invert">
+	  {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}</p>
+	</section>
   </header>
   <section class="mt-6 prose dark:prose-invert">
     {{ .Content }}
