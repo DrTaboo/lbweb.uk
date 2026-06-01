@@ -2,6 +2,8 @@ public/
 node_modules/
 content/aboutme.old/
 themes/blowfish
+exiftool_files
 .hugo_build.lock
+exiftool.exe
 *.uk
 *.option
