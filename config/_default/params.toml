@@ -31,10 +31,6 @@ appId = "1:225433503394:web:f94d51ceeefa83f04c79fb"
 measurementId = "G-DB62FCYVEE"
 databaseURL = "https://lbweb-post-likes-n-views-default-rtdb.europe-west1.firebasedatabase.app"
 
-[umamiAnalytics]
-websiteid = "d78540f5-cfbc-470f-9b32-99e0343e1ed5"
-domain = "lbweb.uk/stats"
-
 [header]
 layout = "fixed"
 
