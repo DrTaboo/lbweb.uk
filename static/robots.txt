@@ -59,6 +59,7 @@ Allow: /robots.txt
 Allow: /$
 Disallow: /photography/
 Disallow: /albums/
+Disallow: /unsubscribe/
 
 # --- AI Search ---
 
@@ -74,6 +75,7 @@ Allow: /robots.txt
 Allow: /$
 Disallow: /photography/
 Disallow: /albums/
+Disallow: /unsubscribe/
 
 # --- Search Engine Crawlers && Cloudflare ---
 
