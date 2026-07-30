@@ -1,9 +1,9 @@
-# lbweb.uk — Lewis's Personal Site
+# lbweb.uk - Lewis's Personal Site
 
 Lewis's personal website. Contains a photography portfolio and related albums, personal blog, and academic publications.
 
 ## About
-A personal site built with Hugo (Blowfish theme). Content is the personal work of Lewis — a UK-based student currently studying Physics, Chemistry, and Statistics at A-Level.
+A personal site built with Hugo (Blowfish theme). Content is the personal work of Lewis - a UK-based student currently studying Physics, Chemistry, and Statistics at A-Level.
 
 ## Sections
 
