@@ -140,7 +140,10 @@ DID YOU CHANGE THE PERCENTAGES ON THE ABOUTME PAGE TOO??
 </div>
 </div>
 
-‎  <!-- DIVIDER - Invisible Character since spaces and new lines do shit all -->
+### Recent Photographs
+Below are my recently added photographs to the site. Click on them to see it's information and other photographs of the same category.
+{{< recent-photos >}}
+
 
 <!-- ## Recent -->
 

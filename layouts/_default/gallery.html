@@ -10,19 +10,32 @@
     {{ .Content }}
   </section>
 
-  <section class="mt-10" id="gallery">
-    {{ range sort (where (.Resources.ByType "image") "Name" "not in" (slice "cover.jpg" "featured.jpg" "background.jpg")) "Name" "desc" }}
-    <div class="photo-row" data-src="{{ .RelPermalink }}">
-      <div class="photo-col">
-        <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="rounded-lg shadow-md">
-      </div>
-      <div class="exif-col">
-        <p class="exif-loading">Loading metadata...</p>
-      </div>
+<section class="mt-10 w-full lg:col-span-full mx-auto max-w-5xl" id="gallery">
+  {{ range sort (where (.Resources.ByType "image") "Name" "not in" (slice "cover.jpg" "featured.jpg" "background.jpg")) "Name" "desc" }}
+  <div class="photo-row">
+    <div class="photo-col">
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="rounded-lg shadow-md">
     </div>
-    {{ end }}
-  </section>
-</article>
+    <div class="exif-col">
+      {{ with .Exif }}
+        {{ $iso := .Tags.PhotographicSensitivity }}
+        {{ if not $iso }}{{ $iso = .Tags.ISOSpeedRatings }}{{ end }}
+        {{ if not $iso }}{{ $iso = .Tags.ISO }}{{ end }}
+        <table class="exif-table">
+          <tr><td>Camera</td><td>{{ .Tags.Make }} {{ .Tags.Model }}</td></tr>
+          <tr><td>Aperture</td><td>f/{{ .Tags.FNumber }}</td></tr>
+          <tr><td>Shutter</td><td>{{ .Tags.ExposureTime }}s</td></tr>
+          <tr><td>ISO</td><td>{{ $iso }}</td></tr>
+          <tr><td>Focal length</td><td>{{ .Tags.FocalLength }}mm</td></tr>
+          <tr><td>Date taken</td><td>{{ .Date.Format "2 January 2006" }}</td></tr>
+        </table>
+      {{ else }}
+    <p class="exif-error">No metadata found.</p>
+  {{ end }}
+</div>
+  </div>
+  {{ end }}
+</section>
 
 <style>
   .photo-row {
@@ -60,60 +73,11 @@
     white-space: nowrap;
     width: 40%;
   }
-  .exif-loading {
-    opacity: 0.4;
-    font-style: italic;
-  }
   .exif-error {
     opacity: 0.4;
     font-style: italic;
     font-size: 0.85rem;
   }
 </style>
-
-<script type="module">
-  import exifr from 'https://cdn.jsdelivr.net/npm/exifr/dist/full.esm.js';
-
-  const rows = document.querySelectorAll('.photo-row');
-
-  for (const row of rows) {
-    const src = row.dataset.src;
-    const exifCol = row.querySelector('.exif-col');
-
-    try {
-      const exif = await exifr.parse(src, {
-        pick: ['Make', 'Model', 'FNumber', 'ExposureTime', 'ISO', 'FocalLength', 'DateTimeOriginal', 'Flash']
-      });
-
-      if (!exif) {
-        exifCol.innerHTML = '<p class="exif-error">No metadata found.</p>';
-        continue;
-      }
-
-      const fmt = (v) => v !== undefined ? v : '—';
-      const fnum = exif.FNumber ? `f/${exif.FNumber}` : '—';
-      const shutter = exif.ExposureTime
-        ? exif.ExposureTime < 1
-          ? `1/${Math.round(1 / exif.ExposureTime)}s`
-          : `${exif.ExposureTime}s`
-        : '—';
-      const date = exif.DateTimeOriginal
-        ? new Date(exif.DateTimeOriginal).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
-        : '—';
-
-      exifCol.innerHTML = `
-        <table class="exif-table">
-          <tr><td>Camera</td><td>${fmt(exif.Make)} ${fmt(exif.Model)}</td></tr>
-          <tr><td>Aperture</td><td>${fnum}</td></tr>
-          <tr><td>Shutter</td><td>${shutter}</td></tr>
-          <tr><td>ISO</td><td>${fmt(exif.ISO)}</td></tr>
-          <tr><td>Focal length</td><td>${exif.FocalLength ? exif.FocalLength + 'mm' : '—'}</td></tr>
-          <tr><td>Date taken</td><td>${date}</td></tr>
-        </table>
-      `;
-    } catch (e) {
-      exifCol.innerHTML = '<p class="exif-error">Could not read metadata.</p>';
-    }
-  }
-</script>
+</article>
 {{ end }}

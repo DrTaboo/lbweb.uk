@@ -72,7 +72,7 @@ onmouseenter="this.style.background='rgba(255,255,255,0.12)';this.style.color='#
 onmouseleave="this.style.background='rgba(255,255,255,0.06)';this.style.color='rgba(255,255,255,0.75)';this.style.transform='';this.querySelector('span')&&(this.querySelector('span').style.opacity='0')">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
 Email me
-<span style="position:absolute;bottom:calc(100% + 8px);left:62%;transform:translateX(-50%);background:rgba(255,255,255,0.12);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;border:0.5px solid rgba(255,255,255,0.2);">contactme @lbweb.uk</span>
+<span style="position:absolute;bottom:calc(100% + 8px);left:62%;transform:translateX(-50%);background:rgba(255,255,255,0.12);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;border:0.5px solid rgba(255,255,255,0.2);">contactme@lbweb.uk</span>
 </a>
 <a href="https://www.instagram.com/lb.photography.gb/" target="_blank" rel="noopener" aria-label="Instagram"
 style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:0.5px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.75);text-decoration:none;font-size:14px;transition:background 0.15s,color 0.15s,transform 0.15s;"
