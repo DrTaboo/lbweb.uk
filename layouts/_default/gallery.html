@@ -16,20 +16,39 @@
     <div class="photo-col">
       <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="rounded-lg shadow-md">
     </div>
-    <div class="exif-col">
-      {{ with .Exif }}
-        {{ $iso := .Tags.PhotographicSensitivity }}
-        {{ if not $iso }}{{ $iso = .Tags.ISOSpeedRatings }}{{ end }}
-        {{ if not $iso }}{{ $iso = .Tags.ISO }}{{ end }}
-        <table class="exif-table">
-          <tr><td>Camera</td><td>{{ .Tags.Make }} {{ .Tags.Model }}</td></tr>
-          <tr><td>Aperture</td><td>f/{{ .Tags.FNumber }}</td></tr>
-          <tr><td>Shutter</td><td>{{ .Tags.ExposureTime }}s</td></tr>
-          <tr><td>ISO</td><td>{{ $iso }}</td></tr>
-          <tr><td>Focal length</td><td>{{ .Tags.FocalLength }}mm</td></tr>
-          <tr><td>Date taken</td><td>{{ .Date.Format "2 January 2006" }}</td></tr>
-        </table>
-      {{ else }}
+<div class="exif-col">
+  {{ with .Exif }}
+    {{ $iso := .Tags.PhotographicSensitivity }}
+    {{ if not $iso }}{{ $iso = .Tags.ISOSpeedRatings }}{{ end }}
+    {{ if not $iso }}{{ $iso = .Tags.ISO }}{{ end }}
+
+    {{ $make := .Tags.Make }}
+    {{ $model := .Tags.Model }}
+    {{ $camera := $model }}
+    {{ if and $make (not (in $model $make)) }}
+      {{ $camera = printf "%s %s" $make $model }}
+    {{ end }}
+
+    {{ $fnum := printf "%v" .Tags.FNumber }}
+    {{ $fnumDisplay := $fnum }}
+    {{ if in $fnum "/" }}
+      {{ $parts := split $fnum "/" }}
+      {{ $num := float (index $parts 0) }}
+      {{ $den := float (index $parts 1) }}
+      {{ if gt $den 0 }}
+        {{ $fnumDisplay = printf "%.1f" (div $num $den) }}
+      {{ end }}
+    {{ end }}
+
+    <table class="exif-table">
+      <tr><td>Camera</td><td>{{ $camera }}</td></tr>
+      <tr><td>Aperture</td><td>f/{{ $fnumDisplay }}</td></tr>
+      <tr><td>Shutter</td><td>{{ .Tags.ExposureTime }}s</td></tr>
+      <tr><td>ISO</td><td>{{ $iso }}</td></tr>
+      <tr><td>Focal length</td><td>{{ .Tags.FocalLength }}mm</td></tr>
+      <tr><td>Date taken</td><td>{{ .Date.Format "2 January 2006" }}</td></tr>
+    </table>
+  {{ else }}
     <p class="exif-error">No metadata found.</p>
   {{ end }}
 </div>
