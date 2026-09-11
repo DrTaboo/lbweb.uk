@@ -28,8 +28,8 @@
     {{ range $recentPhotos }}
       {{ $img := .image }}
       {{ $page := .page }}
-      {{ $thumb := $img.Resize "x300 webp q85" }}
-      {{ $thumb2x := $img.Resize "x600 webp q85" }}
+      {{ $thumb := $img.Resize "x300 webp q100" }}
+      {{ $thumb2x := $img.Resize "x1200 webp q100" }}
       <a href="{{ $page.RelPermalink }}" style="scroll-snap-align: start; flex-shrink: 0;">
         <img
           src="{{ $thumb.RelPermalink }}"
