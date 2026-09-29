@@ -1,0 +1,10 @@
+{{ $publications := where site.RegularPages "Section" "publications" }}
+{{ if $publications }}
+<section class="w-full my-8 flex flex-col items-center">
+  <div class="w-full max-w-2xl space-y-4">
+    {{ range first 3 ($publications.ByDate.Reverse) }}
+      {{ partial "article-link/simple.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

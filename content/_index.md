@@ -128,6 +128,10 @@ DID YOU CHANGE THE PERCENTAGES ON THE ABOUTME PAGE TOO??
      ============================================================ -->
 </div>
 
+### Recent Publications
+Below are my recently added publications to the site. Click on them to read further.
+{{< recent-publications >}}
+
 ‎  <!-- DIVIDER - Invisible Character since spaces and new lines do shit all -->
 
 ## Photography

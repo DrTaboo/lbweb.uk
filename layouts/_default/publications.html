@@ -1,0 +1,32 @@
+{{ define "main" }}
+<style>
+  .layout-basic, .max-w-prose, main .prose {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  main {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+  }
+</style>
+
+<article class="w-full">
+  <header class="mb-8">
+    <h1 class="text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      {{ .Title }}
+    </h1>
+    {{ if .Content }}
+    <section class="mt-4 prose dark:prose-invert">
+      {{ .Content }}
+    </section>
+    {{ end }}
+  </header>
+
+  <section class="space-y-6">
+    {{ range .Pages.ByWeight }}
+      {{ partial "article-link/simple.html" . }}
+    {{ end }}
+  </section>
+</article>
+{{ end }}

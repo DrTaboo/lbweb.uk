@@ -1,5 +1,5 @@
 ---
-title: "Enigma: The Code and The Crack"
+title: "Enigma Technical Paper - Work In Progress!"
 date: '2026-02-12T17:28:14+01:00'
 showDate: true
 showViews: true
@@ -7,6 +7,7 @@ showLikes: true
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true
+weight: 1
 ---
 
 ## <!> FORENOTE
@@ -22,6 +23,6 @@ I hope you enjoy it!
 
 This work is licensed under CC BY-NC-ND 4.0. You are free to copy and redistribute the material in any medium or format, provided you give appropriate credit and do not modify the original content.
 
-## The actual document
+<!-- ## The actual document -->
 
-{{< pdf-viewer "/pdfs/placeholder.pdf" >}}
+<!-- {{< pdf-viewer "/pdfs/placeholder.pdf" >}} -->
