@@ -34,6 +34,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/publications/aqa-physics-particles-topic-notes/</loc>
+    <lastmod>2026-09-29T22:12:16+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/photography/man-made/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -44,17 +50,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/albums/chelsea-flower-show---23.05.2026/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/albums/model-village---12.02.2024/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/publications/aqa-physics-particles-topic-notes/</loc>
+    <loc>http://localhost:1313/publications/ocr-chemistry-a-hess-law/</loc>
     <lastmod>2026-09-29T22:12:16+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -66,8 +62,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publications/ocr-chemistry-a-hess-law/</loc>
-    <lastmod>2026-09-29T22:12:16+01:00</lastmod>
+    <loc>http://localhost:1313/albums/chelsea-flower-show---23.05.2026/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/albums/model-village---12.02.2024/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

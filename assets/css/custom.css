@@ -3,10 +3,10 @@ body {
   min-height: 100vh;
 }
 
-article section.prose {
+section.prose:has(.article-content) {
   max-width: 100%;
 }
-article section.prose > div.min-w-0 {
+section.prose:has(.article-content) > div.min-w-0 {
   max-width: none !important;
   flex: 1 1 0%;
   min-width: 0;
