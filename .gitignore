@@ -5,6 +5,6 @@ themes/blowfish
 exiftool_files
 .hugo_build.lock
 exiftool.exe
-git commands.txt
+git commands.md
 *.uk
 *.option
