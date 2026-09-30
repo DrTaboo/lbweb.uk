@@ -2,7 +2,8 @@ name: Deploy to lb***-f-ubu**04
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
 
 jobs:
   deploy:
