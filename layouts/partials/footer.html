@@ -56,10 +56,10 @@
         <span class="text-neutral-600 dark:text-neutral-500">|</span>
         <span>
           {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-            href="gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a>`
+            href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a>`
         }}
         {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-          href="blowfish.page" target="_blank" rel="noopener noreferrer">Blowfish</a>`
+          href="https://blowfish.page" target="_blank" rel="noopener noreferrer">Blowfish</a>`
         }}
         {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
         </span>
