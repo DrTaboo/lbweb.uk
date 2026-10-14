@@ -20,7 +20,7 @@
   {{ with (.Params.Summary | default .Params.Description) | default .Site.Params.description }}
     <meta name="description" content="{{ . }}">
   {{ end }}
-  {{ with  .Params.Tags | default .Site.Params.keywords }}
+  {{ with .Params.Tags | default .Site.Params.keywords }}
     <meta name="keywords" content="{{ range . }}{{ . }},{{ end }}">
   {{ end }}
   {{ with .Site.Params.robots }}
@@ -51,7 +51,7 @@
   {{ end }}
   {{ with .Site.Params.Author.links }}
     {{ range $links := . }}
-      {{ range $name, $url := $links }}
+      {{ range $name, $url :=$links }}
         {{ if not (strings.HasPrefix $url "mailto:") }}
           <link href="{{ $url }}" rel="me">
         {{ end }}
@@ -67,7 +67,7 @@
   {{ $pageImages := .Resources.ByType "image" }}
   {{ range slice "*featured*" "*cover*" "*thumbnail*" }}
     {{ if not $featureImage }}
-      {{ $featureImage = $pageImages.GetMatch . }}
+      {{ $featureImage =$pageImages.GetMatch . }}
     {{ end }}
   {{ end }}
   {{ if not $featureImage }}
@@ -105,68 +105,94 @@
   {{ $alg := .Site.Params.fingerprintAlgorithm | default "sha512" }}
 
   {{/* CSS */}}
-  {{ $cssResources := slice }}
+  {{ $cssRaw := slice }}
   {{ $schemeName := .Site.Params.colorScheme | default "blowfish" }}
-  {{ $cssScheme := resources.Get (printf "css/schemes/%s.css" (lower $schemeName)) | default (resources.Get "css/schemes/blowfish.css") }}
-  {{ $cssResources = $cssResources | append $cssScheme }}
-  {{ $cssResources = $cssResources | append (resources.Get "css/compiled/main.css") }}
+  {{ $cssScheme := resources.Get (printf "css/schemes/\%s.css" (lower $schemeName)) | default (resources.Get "css/schemes/blowfish.css") }}
+  {{ $cssRaw = $cssRaw \vert{} append$cssScheme }}
+  {{ $cssRaw =$cssRaw | append (resources.Get "css/compiled/main.css") }}
   {{ with resources.Get "css/custom.css" }}
-    {{ $cssResources = $cssResources | append . }}
+    {{ $cssRaw =$cssRaw | append . }}
   {{ end }}
   {{ if not .Site.Params.disableImageZoom | default true }}
-    {{ $cssResources = $cssResources | append (resources.Get "lib/zoom/style.css") }}
+    {{ $cssRaw =$cssRaw | append (resources.Get "lib/zoom/style.css") }}
   {{ end }}
-  {{ $bundleCSS := $cssResources | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint $alg }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $bundleCSS.RelPermalink }}"
-    integrity="{{ $bundleCSS.Data.Integrity }}">
+
+  {{ $cssResources := slice }}
+  {{ range $res :=$cssRaw }}
+    {{ if $res }}
+      {{ $cssResources = $cssResources \vert{} append$res }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $cssResources }}
+    {{ $bundleCSS := $cssResources \vert{} resources.Concat "css/main.bundle.css" \vert{} resources.Minify \vert{} resources.Fingerprint $alg }}
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ $bundleCSS.RelPermalink }}"
+      integrity="{{ $bundleCSS.Data.Integrity }}">
+  {{ end }}
 
   {{/* JS loaded immediately */}}
-  {{ $jsAppearance := resources.Get "js/appearance.js" | resources.ExecuteAsTemplate "js/appearance.js" . | resources.Minify | resources.Fingerprint $alg }}
-  <script
-    type="text/javascript"
-    src="{{ $jsAppearance.RelPermalink }}"
-    integrity="{{ $jsAppearance.Data.Integrity }}"></script>
-  {{ $enableA11y := .Site.Params.enableA11y | default false }}
-  {{ if $enableA11y }}
-    {{ $jsA11y := resources.Get "js/a11y.js" | resources.Minify | resources.Fingerprint $alg }}
-    <script src="{{ $jsA11y.RelPermalink }}" integrity="{{ $jsA11y.Data.Integrity }}"></script>
-  {{ end }}
-  {{ $showZenMode := .Params.showZenMode | default (.Site.Params.article.showZenMode | default false) }}
-  {{ $shouldIncludeZenMode := or $enableA11y $showZenMode }}
-  {{ if and .IsPage $shouldIncludeZenMode }}
-    {{ $jsZenMode := resources.Get "js/zen-mode.js" | resources.Minify | resources.Fingerprint $alg }}
+  {{ with resources.Get "js/appearance.js" }}
+    {{ $jsAppearance := . | resources.ExecuteAsTemplate "js/appearance.js" $ \vert{} resources.Minify \vert{} resources.Fingerprint $alg }}
     <script
       type="text/javascript"
-      src="{{ $jsZenMode.RelPermalink }}"
-      integrity="{{ $jsZenMode.Data.Integrity }}"></script>
+      src="{{ $jsAppearance.RelPermalink }}"
+      integrity="{{ $jsAppearance.Data.Integrity }}"></script>
+  {{ end }}
+  {{ $enableA11y := .Site.Params.enableA11y | default false }}
+  {{ if $enableA11y }}
+    {{ with resources.Get "js/a11y.js" }}
+      {{ $jsA11y := . \vert{} resources.Minify \vert{} resources.Fingerprint $alg }}
+      <script src="{{ $jsA11y.RelPermalink }}" integrity="{{ $jsA11y.Data.Integrity }}"></script>
+    {{ end }}
+  {{ end }}
+  {{ $showZenMode := .Params.showZenMode | default (.Site.Params.article.showZenMode | default false) }}
+  {{ $shouldIncludeZenMode := or $enableA11y$showZenMode }}
+  {{ if and .IsPage $shouldIncludeZenMode }}
+    {{ with resources.Get "js/zen-mode.js" }}
+      {{ $jsZenMode := . \vert{} resources.Minify \vert{} resources.Fingerprint $alg }}
+      <script
+        type="text/javascript"
+        src="{{ $jsZenMode.RelPermalink }}"
+        integrity="{{ $jsZenMode.Data.Integrity }}"></script>
+    {{ end }}
   {{ end }}
   {{ if not .Site.Params.disableImageZoom | default true }}
-    {{ $zoomJS := resources.Get "lib/zoom/zoom.min.umd.js" | resources.Fingerprint $alg }}
-    <script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    {{ with resources.Get "lib/zoom/zoom.min.umd.js" }}
+      {{ $zoomJS := . \vert{} resources.Fingerprint $alg }}
+      <script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    {{ end }}
   {{ end }}
 
   {{/* JS deferred */}}
-  {{ $jsResources := slice }}
+  {{ $jsRaw := slice }}
   {{ if site.Params.footer.showScrollToTop | default true }}
-    {{ $jsResources = $jsResources | append (resources.Get "js/scroll-to-top.js") }}
+    {{ $jsRaw =$jsRaw | append (resources.Get "js/scroll-to-top.js") }}
   {{ end }}
   {{ if .Site.Params.enableSearch | default false }}
-    {{ $jsResources = $jsResources | append (resources.Get "lib/fuse/fuse.min.js") | append (resources.Get "js/search.js") }}
+    {{ $jsRaw =$jsRaw | append (resources.Get "lib/fuse/fuse.min.js") | append (resources.Get "js/search.js") }}
   {{ end }}
   {{ if .Site.Params.enableCodeCopy | default false }}
-    {{ $jsResources = $jsResources | append (resources.Get "js/code.js") }}
+    {{ $jsRaw =$jsRaw | append (resources.Get "js/code.js") }}
   {{ end }}
   {{ if .Site.Params.rtl | default false }}
-    {{ $jsResources = $jsResources | append (resources.Get "js/rtl.js") }}
+    {{ $jsRaw =$jsRaw | append (resources.Get "js/rtl.js") }}
   {{ end }}
-  {{ $jsResources = $jsResources | append (resources.Get "js/katex-render.js") }}
-  {{ $jsResources = $jsResources | append (resources.Get "js/print-support.js") }}
-  {{ $jsResources = $jsResources | append (resources.Get "js/email.js") }}
+  {{ $jsRaw =$jsRaw | append (resources.Get "js/katex-render.js") }}
+  {{ $jsRaw =$jsRaw | append (resources.Get "js/print-support.js") }}
+  {{ $jsRaw =$jsRaw | append (resources.Get "js/email.js") }}
+
+  {{ $jsResources := slice }}
+  {{ range $res :=$jsRaw }}
+    {{ if $res }}
+      {{ $jsResources = $jsResources \vert{} append$res }}
+    {{ end }}
+  {{ end }}
+
   {{ if $jsResources }}
-    {{ $bundleJS := $jsResources | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint $alg }}
+    {{ $bundleJS := $jsResources \vert{} resources.Concat "js/main.bundle.js" \vert{} resources.Minify \vert{} resources.Fingerprint $alg }}
     <script
       defer
       type="text/javascript"
@@ -210,10 +236,4 @@
 
   {{/* Advertisement */}}
   {{ with .Site.Params.advertisement.adsense }}
-    <meta name="google-adsense-account" content="{{ . }}">
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}"
-      crossorigin="anonymous"></script>
-  {{ end }}
-</head>
+    <meta name="google-adsense-account" content="{{ .
