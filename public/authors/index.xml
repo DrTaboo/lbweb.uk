@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Authors on Portfolio of Lewis ███████</title>
-    <link>http://localhost:1313/authors/</link>
-    <description>Recent content in Authors on Portfolio of Lewis ███████</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>contactme@lbweb.uk (Lewis ███████)</managingEditor>
-    <webMaster>contactme@lbweb.uk (Lewis ███████)</webMaster>
-    <copyright>__© 2026 Lewis B. (lbweb.uk)__ | All Rights Reserved. Content licensed under &lt;u&gt;[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)&lt;/u&gt; UOS.</copyright>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authors on Portfolio of Lewis ███████</title><link>https://lbweb.uk/authors/</link><description>Recent content in Authors on Portfolio of Lewis ███████</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>contactme@lbweb.uk (Lewis ███████)</managingEditor><webMaster>contactme@lbweb.uk (Lewis ███████)</webMaster><copyright>__© 2026 Lewis B. (lbweb.uk)__ | All Rights Reserved. Content licensed under &lt;u&gt;[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)&lt;/u&gt; UOS.</copyright><atom:link href="https://lbweb.uk/authors/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
