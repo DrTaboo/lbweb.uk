@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --renderToMemory
       
       - name: Connect to Tailscale
         uses: tailscale/github-action@v2
