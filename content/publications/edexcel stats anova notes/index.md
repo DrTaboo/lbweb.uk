@@ -17,4 +17,6 @@ These are rough(ish) notes and spelling errors may be found.
 This is also based off of 9ST0 (A-Level Edexcel Statistics) content.
 I hope you enjoy it!
 
+*Last Revised: 15th of October, 2026*
+
 {{< pdf-viewer "/pdfs/anova-sumofsquares-notes-1-flattened.pdf" >}}
