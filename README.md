@@ -8,4 +8,6 @@ This is the source code of my website hosted at [lbweb.uk](https://www.lbweb.uk)
 I compiled this using [GoHugo](https://github.com/gohugoio/hugo) with the [Blowfish](https://github.com/nunocoracao/blowfish) theme. Everything outside of the theme folder is made by me or edited by me from the original config. 
 Once edited files are pushed to github, a github worker action takes place deploying it onto one of my servers for hosting on my domain.
 
+My work may not be the best (and possibly the worst thing you've ever seen), however thats my favourite part of this project. I'm perservering through something I'm uneducated in, learning from (almost) every commit to the repo. 
+
 If you have any issues, please contact me via [contactme@lbweb.uk](mailto:contactme@lbweb.uk).
