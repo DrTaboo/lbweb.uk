@@ -16,20 +16,22 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 fathomAnalytics = { }
 selineAnalytics = { }
 buymeacoffee = { }
-verification = { google = "r2D3w6_efwJgKfi-7HWt3Unf6ROnGgK5iiNvaUDxsgY" }
 rssnext = { }
 advertisement = { }
-disableKinds = ["robotsTXT"]
+disableKinds = [ "robotsTXT" ]
+
+[verification]
+google = "r2D3w6_efwJgKfi-7HWt3Unf6ROnGgK5iiNvaUDxsgY"
 
 [firebase]
-apiKey = "AIzaSyBkEiNgeSCPIYLQwFpGX-sejvtuRSIDuGE"
-authDomain = "lbweb-post-likes-n-views.firebaseapp.com"
-projectId = "lbweb-post-likes-n-views"
-storageBucket = "lbweb-post-likes-n-views.firebasestorage.app"
-messagingSenderId = "225433503394"
-appId = "1:225433503394:web:f94d51ceeefa83f04c79fb"
-measurementId = "G-DB62FCYVEE"
-databaseURL = "https://lbweb-post-likes-n-views-default-rtdb.europe-west1.firebasedatabase.app"
+apiKey = ""
+authDomain = ""
+projectId = ""
+storageBucket = ""
+messagingSenderId = ""
+appId = ""
+measurementId = ""
+databaseURL = ""
 
 [header]
 layout = "fixed"
@@ -54,8 +56,8 @@ homepageImage = "2025.08.05 - _MG_0116.jpg"
 
 [article]
 showDate = true
-showViews = true
-showLikes = true
+showViews = false
+showLikes = false
 showDateOnlyInArticle = false
 showDateUpdated = true
 showAuthor = false

@@ -2,8 +2,8 @@
 title: "Edexcel A-Level Statistics: ANOVA & Sum Of Squares"
 date: '2026-10-14T21:30:00+01:00'
 showDate: true
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true

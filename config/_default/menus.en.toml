@@ -40,19 +40,25 @@ weight = 4
 none = "none"
 
 [[footer]]
+name = "Privacy Policy"
+pageRef = "privacy-policy"
+identifier = "HYc38Lce8c"
+weight = 1
+
+[[footer]]
 name = "Instagram"
 url = "https://www.instagram.com/lb.photography.gb/"
 identifier = "AKjf6lZrfh"
-weight = 9_999
+weight = 4
 
 [[footer]]
 name = "Website Repository"
 url = "https://github.com/DrTaboo/lbweb.uk"
 identifier = "9zY0ICFQph"
-weight = 9_999
+weight = 3
 
 [[footer]]
 name = "Email Me"
 url = "mailto:contactme@lbweb.uk"
 identifier = "Qmzq1Pi8y9"
-weight = 9_999
+weight = 2

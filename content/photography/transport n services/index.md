@@ -3,8 +3,8 @@ title: "Public Transport & Services"
 weight: 23
 layout: "gallery"
 showDate: false
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true

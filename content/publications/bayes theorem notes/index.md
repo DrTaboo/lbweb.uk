@@ -2,8 +2,8 @@
 title: "Edexcel A-Level Statistics: Bayes' Theorem"
 date: '2026-09-29T22:12:16+01:00'
 showDate: true
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true

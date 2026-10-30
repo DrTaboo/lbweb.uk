@@ -3,8 +3,8 @@ title: "Model Village Collection - 12.02.2024"
 weight: 99
 layout: "gallery"
 showDate: false
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true

@@ -2,8 +2,8 @@
 title: "Enigma Technical Paper - Work In Progress!"
 date: '2026-02-12T17:28:14+01:00'
 showDate: true
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true

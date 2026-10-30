@@ -3,8 +3,8 @@ title: "Nature"
 weight: 40
 layout: "gallery"
 showDate: false
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 showReadingTime: false
 showWordCount: false
 showDateUpdated: true
