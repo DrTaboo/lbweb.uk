@@ -1,6 +1,6 @@
 ---
 title: "Edexcel A-Level Statistics: ANOVA & Sum Of Squares"
-date: '2026-10-14T21:30:00+01:00'
+date: '2026-11-04T20:25:00+00:00'
 showDate: true
 showViews: false
 showLikes: false
@@ -17,6 +17,6 @@ These are rough(ish) notes and spelling errors may be found.
 This is also based off of 9ST0 (A-Level Edexcel Statistics) content.
 I hope you enjoy it!
 
-*Last Revised: 15th of October, 2026*
+*Last Revised: 4th of November, 2026*
 
 {{< pdf-viewer "/pdfs/anova-sumofsquares-notes-1-flattened.pdf" >}}
