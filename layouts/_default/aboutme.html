@@ -58,7 +58,7 @@
             {{ end }}
           </div>
  
-          {{/* PROFILE IMAGE: place profile.jpg in content/aboutme/ */}}
+          {{/* PROFILE IMAGE */}}
           {{ if $profileImage }}
             {{ $final := $profileImage }}
             {{ if not (or $disableImageOptimization (eq $profileImage.MediaType.SubType "svg")) }}
@@ -73,7 +73,7 @@
           {{ end }}
         </div>
  
-        {{/* ---- PAGE CONTENT (your HTML cards etc go here in index.md) ---- */}}
+        {{/* ---- PAGE CONTENT ---- */}}
         <section class="relative px-8 pb-16 prose dark:prose-invert max-w-full">
           {{ .Content }}
         </section>
@@ -83,7 +83,7 @@
   </div>
 </article>
  
-{{/* ---- BACKGROUND BLUR (matches homepage behaviour) ---- */}}
+{{/* ---- BACKGROUND BLUR ---- */}}
 {{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}
   <div
     id="background-blur"
