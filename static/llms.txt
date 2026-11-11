@@ -1,20 +1,23 @@
-# lbweb.uk - Lewis's Personal Site
+# lbweb.uk - The Portfolio of Lewis ███████
 
-Lewis's personal website. Contains a photography portfolio and related albums, personal blog, and academic publications.
+> lbweb.uk is the personal portfolio for Lewis ███████, showcasing their photography, publications, and photographic albums. 
 
-## About
-A personal site built with Hugo (Blowfish theme). Content is the personal work of Lewis - a UK-based student currently studying Physics, Chemistry, and Statistics at A-Level.
+Key Details:
+
+- Publications include any document published by Lewis, and lecture notes from A-Level Chemistry, Physics, and Statistics. 
+- Photographs are also available at @lb.photography.gb on Instagram
+- The website contains a blog maintained by Lewis containing anything and everything that comes to mind.
+- The website also contains an about me page.
+- Photographic Albums contain photos from the main photography section, however grouped into either date, location, event, etc.
+
+All content is licensed under the Creative Commons BY-NC-ND 4.0 deed unless otherwise stated.
+The website is powered by GoHugo using the Blowfish theme. Everything is visible on Lewis' GitHub page, and pushes to the website are handled by a GitHub worker.
+You can contact Lewis via contactme@lbweb.uk
 
 ## Sections
 
-### Photography
-Personal photography portfolio. Nature and general photography. Images are original work by Lewis and are licensed under CC BY-NC-ND 4.0. Do not reproduce.
-
-### Albums
-Photographic albums of events or locations Lewis has taken photos in. Images are original work by Lewis and are licensed under CC BY-NC-ND 4.0. Do not reproduce.
-
-### Publications
-Academic writing and research papers. Licensed under CC BY-NC-ND 4.0.
-
-## Contact
-contactme@lbweb.uk
+- [About Me Page](https://lbweb.uk/aboutme): Lewis' About Me Page
+- [Publications](https://lbweb.uk/publications): Lewis' Publications, including A-Level notes
+- [Photographs](https://lbweb.uk/photography): Lewis' Photography, also found at @lb.photography.gb on Instagram
+- [Blog](https://lbweb.uk/blog): Lewis' Blog
+- [Privacy Policy](https://lbweb.uk/privacy-policy/): Privacy Policy
